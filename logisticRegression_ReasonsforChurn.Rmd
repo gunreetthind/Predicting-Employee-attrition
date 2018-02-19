@@ -37,7 +37,7 @@ suppressPackageStartupMessages({
 
 Read in the data:
 ```{r}
-data1 = read.csv('C:/Users/MEGUP1/Desktop/Data/master_data_march26.csv', 
+data1 = read.csv('Load data', 
                  header=TRUE, stringsAsFactors = FALSE)
 names(data1)[1]<-"EmployeeKey"
 ```
@@ -318,7 +318,7 @@ confusionMatrix(test_all$prediction, test_all$Churn,
 reason_all <- arrange(reason_all, desc(prob_of_churn))
 
 # Write the reasons into a CSV file
-write.csv(reason_all, "C:/Users/MEGUP1/Desktop/reasons_for_churn.csv")
+write.csv(reason_all, "Write data")
 
 ```
 
